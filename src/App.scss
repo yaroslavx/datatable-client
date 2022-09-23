@@ -1,0 +1,168 @@
+.app {
+  margin: 10px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.filter-container {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 290px;
+}
+.pressed {
+  background-color: #333;
+  color: white;
+  border-radius: 9px;
+  padding: 9px;
+  margin: 4px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sort-opt-pressed {
+  padding: 3px;
+  border-radius: 5px;
+  margin: 0 0 0 10px;
+  background-color: #333;
+  color: white;
+}
+
+.sorting-option {
+  padding: 3px;
+  border-radius: 5px;
+  margin: 0 0 0 10px;
+
+  &:hover {
+    background-color: #7eaa71;
+    cursor: pointer;
+  }
+}
+
+.filter {
+  position: absolute;
+  top: 50px;
+  width: 270px;
+  border-radius: 10px;
+  background-color: #7eaa71;
+  padding: 10px;
+
+  .option-container {
+    margin-top: 10px;
+    display: flex;
+
+    .options-column {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .option-column {
+        border-radius: 9px;
+        background-color: white;
+        padding: 9px;
+        margin: 4px 3px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #333;
+          color: white;
+        }
+      }
+    }
+
+    .options-logic {
+      width: 30%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: start;
+      justify-content: center;
+
+      .option-logic {
+        background-color: white;
+        padding: 9px;
+        margin: 4px 3px;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #333;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.option {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+  .option-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #7eaa71;
+    border-radius: 10px;
+    padding: 3px;
+  }
+}
+
+.search {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 20px;
+  outline: none;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.listItem {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: black;
+  font-weight: 300;
+}
+
+table {
+  background-color: #f1f1f1;
+  width: 90%;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 50px 0px;
+  border-spacing: 15px;
+  color: black;
+}
+
+tr {
+  margin-bottom: 20px;
+}
+
+th {
+  width: 250px;
+  text-align: left;
+  font-size: 20px;
+}
+
+td {
+  width: 250px;
+  font-size: 20px;
+}
