@@ -36,7 +36,7 @@ const Main = () => {
   useEffect(() => {
     const fetchData = async () => {
       const res = await axios.get(
-        `http://localhost:5000?q=${query}&c=${column}&l=${logic}`
+        `${process.env.REACT_APP_API_URL}?q=${query}&c=${column}&l=${logic}`
       );
 
       // Сортировка данных, немного нечитаемо правда
